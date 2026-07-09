@@ -1,5 +1,197 @@
-import React from "react";
+import Link from "next/link";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { useState } from "react";
+// import { HiBars3 } from "react-icons/hi2";
+import { useRouter } from "next/router";
+import { HiBars3 } from "react-icons/hi2";
+import { HiOutlineX } from "react-icons/hi";
+// import { HiOutlineX } from "react-icons/hi";
 
 export default function Navbar() {
-  return <div>Navbar</div>;
+  const flexStyles = "justify-between flex items-center";
+  const isAboveMediaScreens = useMediaQuery("(min-width: 1060px)");
+  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  const router = useRouter();
+  return (
+    <nav className="  ">
+      <div
+        className={`z-30 w-full shadow ${flexStyles} fixed top-0 bg-[#1A2739] `}
+      >
+        <div className={`${flexStyles} mx-auto w-5/6`}>
+          <div className={`${flexStyles} gap-8 w-full`}>
+            <Link href="/">
+              <p className="font-semibold text-4xl text-[#7DB9FF]">LifeWay</p>
+            </Link>
+
+            {isAboveMediaScreens ? (
+              <div className={`${flexStyles} justify-center-safe w-full gap-4`}>
+                <div
+                  className={
+                    "flex flex-col font-medium mt-4 p-4  md:flex-row md:space-x-8 md:mt-0 text-[16px]   "
+                  }
+                >
+                  <div
+                    className={`${
+                      router.pathname === "/"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/">Home</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#aboutUs"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#aboutus">About Us</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#ourservices"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#ourservices">Our Services</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#ourprocess"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#ourprocess">Our Process</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/insurance"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/insurance">Insurance</Link>
+                  </div>
+
+                  <div
+                    className={`${
+                      router.pathname === "/#testimonies"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#testimonies">Testiminials</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#faqs"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#faqs">Faqs</Link>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="flex justify-end p-4">
+                <button
+                  className="rounded-full p-2"
+                  onClick={() => setIsMenuToggled(!isMenuToggled)}
+                >
+                  <HiBars3 className="h-6 w-6 text-white" />
+                </button>
+              </div>
+            )}
+
+            {/**mobile menu modal */}
+            {!isAboveMediaScreens && isMenuToggled && (
+              <div
+                className="bg-[#1A2739] fixed right-0 bottom-0 h-full w-50 z-40 p-5 drop-shadow-lg 
+                overflow-hidden transition-transform duration-300 ease-in-out transform translate-x-0"
+              >
+                {/* Close icon */}
+                <div className="p-4 flex justify-end">
+                  <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                    <HiOutlineX className="h-6 w-6 text-white hover:text-red-500 transition duration-200" />
+                  </button>
+                </div>
+
+                {/* Menu Items */}
+                <div className="flex flex-col items-center font-mono text-lg font-bold gap-6 mt-4">
+                  <div
+                    className={`${
+                      router.pathname === "/"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/">Home</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#aboutUs"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#aboutus">About Us</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#ourservices"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#ourservices">Our Services</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#ourprocess"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#ourprocess">Our Process</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/insurance"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/insurance">Insurance</Link>
+                  </div>
+
+                  <div
+                    className={`${
+                      router.pathname === "/#testimonies"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#testimonies">Testiminials</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#faqs"
+                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
+                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                    }`}
+                  >
+                    <Link href="/#faqs">Faqs</Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
 }
