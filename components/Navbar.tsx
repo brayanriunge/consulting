@@ -15,7 +15,14 @@ export default function Navbar() {
   return (
     <nav className="  ">
       <div
-        className={`z-30 w-full shadow ${flexStyles} fixed top-0 bg-[#2d2f44]  `}
+        className={`z-30 w-full shadow ${flexStyles} fixed top-0 `}
+        //glass effect background
+        style={{
+          background: "rgba(45, 47, 68, 0.15)", // Very transparent
+          backdropFilter: "blur(10px)", // Blurs background
+          WebkitBackdropFilter: "blur(10px)", // Safari support
+          borderBottom: "1px solid rgba(255, 255, 255, 0.1)", // Subtle border
+        }}
       >
         <div className={`${flexStyles} mx-auto w-5/6`}>
           <div className={`${flexStyles} gap-8 w-full`}>
