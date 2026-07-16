@@ -15,12 +15,12 @@ export default function Navbar() {
   return (
     <nav className="  ">
       <div
-        className={`z-30 w-full shadow ${flexStyles} fixed top-0 bg-[#1A2739] `}
+        className={`z-30 w-full shadow ${flexStyles} fixed top-0 bg-[#2d2f44]  `}
       >
         <div className={`${flexStyles} mx-auto w-5/6`}>
           <div className={`${flexStyles} gap-8 w-full`}>
             <Link href="/">
-              <p className="font-semibold text-4xl text-[#7DB9FF]">LifeWay</p>
+              <p className="font-semibold text-3xl text-white">consulting</p>
             </Link>
 
             {isAboveMediaScreens ? (
@@ -33,8 +33,8 @@ export default function Navbar() {
                   <div
                     className={`${
                       router.pathname === "/"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
                     <Link href="/">Home</Link>
@@ -42,8 +42,8 @@ export default function Navbar() {
                   <div
                     className={`${
                       router.pathname === "/#aboutUs"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
                     <Link href="/#aboutus">About Us</Link>
@@ -51,48 +51,57 @@ export default function Navbar() {
                   <div
                     className={`${
                       router.pathname === "/#ourservices"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
-                    <Link href="/#ourservices">Our Services</Link>
+                    <Link href="/#ourservices">Services</Link>
                   </div>
                   <div
                     className={`${
-                      router.pathname === "/#ourprocess"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                      router.pathname === "/#cases"
+                        ? "text-[#f64a86]  p-2"
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
-                    <Link href="/#ourprocess">Our Process</Link>
+                    <Link href="/#ourprocess">Cases</Link>
                   </div>
                   <div
                     className={`${
-                      router.pathname === "/insurance"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                      router.pathname === "/#news"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
-                    <Link href="/insurance">Insurance</Link>
+                    <Link href="/#news">News</Link>
                   </div>
 
                   <div
                     className={`${
-                      router.pathname === "/#testimonies"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                      router.pathname === "/#portfolio"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
-                    <Link href="/#testimonies">Testiminials</Link>
+                    <Link href="/#portfolio">Portfolio</Link>
                   </div>
                   <div
                     className={`${
-                      router.pathname === "/#faqs"
-                        ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                        : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
+                      router.pathname === "/#elements"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
                     }`}
                   >
-                    <Link href="/#faqs">Faqs</Link>
+                    <Link href="/#elements">Elements</Link>
+                  </div>
+                  <div
+                    className={`${
+                      router.pathname === "/#contactus"
+                        ? "text-[#f64a86] p-2 "
+                        : "text-white hover:text-[#f64a86] p-2"
+                    }`}
+                  >
+                    <Link href="/#contactus">Contact Us</Link>
                   </div>
                 </div>
               </div>
