@@ -1,7 +1,6 @@
 // import { Geist, Geist_Mono } from "next/font/google";
+import AboutUs from "@/components/AboutUs";
 import Glasseffect from "@/components/Glasseffect";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -17,6 +16,7 @@ export default function Home() {
   return (
     <>
       <Glasseffect />
+      <AboutUs />
     </>
   );
 }
