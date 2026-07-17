@@ -237,10 +237,10 @@ export default function Glasseffect() {
         className="relative z-10 flex items-center justify-center min-h-screen container mx-auto px-4 sm:px-6 lg:px-8"
         style={{}}
       >
-        <div className="flex flex-col lg:flex-row h-full items-center lg:items-start ">
+        <div className="flex flex-col md:flex-row lg:flex-row h-full items-center lg:items-start ">
           <div className="flex flex-col w-full lg:w-2/3 h-full justify-center lg:justify-start py-8 lg:py-0 lg:pt-12 xl:pt-20 ">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold  text-white text-pretty tracking-[6%]">
-              Turning Strategy Into Results. From Planning To Excution.
+              Turning Strategy Into Results.From Planning To Excution.
             </h1>
             <div className="flex-col pl-4 sm:pl-6 md:pl-8 mt-4  ">
               <p className="text-white text-base sm:text-lg md:text-[16px]  max-w-xl mb-6 sm:mb-8 font-medium ">
@@ -256,9 +256,14 @@ export default function Glasseffect() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col justify-items-end items-center gap-4">
-            <div className="w-px h-30 bg-[#f64a86]" />
-            <div className="w-2px bg-white rounded-full" />
+          <div className="hidden lg:block">
+            <div className="hidden md:flex md:flex-col lg:flex-col justify-items-end items-center gap-4 pl-96 lg:py-0 lg:pt-12 xl:pt-20 ">
+              <div className="w-px h-50 bg-[#f64a86] " />
+              <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
+              <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
+              <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
+              <div className="w-8 h-8 rounded-full bg-[#f64a86] border-4 border-gray-300" />
+            </div>
           </div>
         </div>
       </div>
