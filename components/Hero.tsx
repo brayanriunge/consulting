@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
+    /* Hero Content */
     <div className="relative min-h-screen   md:min-h-150 md:mt-18 overflow-hidden ">
       {/*background image*/}
       <div

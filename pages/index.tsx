@@ -1,4 +1,5 @@
 // import { Geist, Geist_Mono } from "next/font/google";
+import Glasseffect from "@/components/Glasseffect";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -15,8 +16,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <Glasseffect />
     </>
   );
 }
