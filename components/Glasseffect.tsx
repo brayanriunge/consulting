@@ -144,88 +144,113 @@ export default function Glasseffect() {
                   </button>
                 </div>
               )}
-
               {/**mobile menu modal */}
               {!isAboveMediaScreens && isMenuToggled && (
-                <div
-                  className="bg-[#1A2739] fixed right-0 bottom-0 h-full w-50 z-40 p-5 drop-shadow-lg 
-                overflow-hidden transition-transform duration-300 ease-in-out transform translate-x-0"
-                >
-                  {/* Close icon */}
-                  <div className="p-4 flex justify-end">
-                    <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                      <HiOutlineX className="h-6 w-6 text-white hover:text-red-500 transition duration-200" />
-                    </button>
-                  </div>
-
-                  {/* Menu Items */}
-                  <div className="flex flex-col items-center font-mono text-lg font-bold gap-6 mt-4">
-                    <div
-                      className={`${
-                        router.pathname === "/"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/">Home</Link>
-                    </div>
-                    <div
-                      className={`${
-                        router.pathname === "/#aboutUs"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/#aboutus">About Us</Link>
-                    </div>
-                    <div
-                      className={`${
-                        router.pathname === "/#ourservices"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/#ourservices">Our Services</Link>
-                    </div>
-                    <div
-                      className={`${
-                        router.pathname === "/#ourprocess"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/#ourprocess">Our Process</Link>
-                    </div>
-                    <div
-                      className={`${
-                        router.pathname === "/insurance"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/insurance">Insurance</Link>
+                <>
+                  <div
+                    className="fixed top-0 left-0 right-0 bottom-0 z-40 "
+                    style={{
+                      background: "rgba(26, 39, 57, 0.3",
+                      backdropFilter: "blur(4px)",
+                      WebkitBackdropFilter: "blur(4px)",
+                    }}
+                    onClick={() => setIsMenuToggled(false)}
+                  />
+                  <div
+                    className="fixed right-0 top-0 bottom-0 w-64 sm:w-80 z-50 p-5 shadow-2xl"
+                    style={{
+                      backgroundColor: "rgba(26, 39, 57, 0.98)", // 98% opacity
+                      backdropFilter: "blur(10px)",
+                      WebkitBackdropFilter: "blur(10px)",
+                      borderLeft: "1px solid rgba(255, 255, 255, 0.08)",
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {/* Close icon */}
+                    <div className="p-4 flex justify-end">
+                      <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                        <HiOutlineX className="h-6 w-6 text-white hover:text-red-500 transition duration-200" />
+                      </button>
                     </div>
 
-                    <div
-                      className={`${
-                        router.pathname === "/#testimonies"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/#testimonies">Testiminials</Link>
-                    </div>
-                    <div
-                      className={`${
-                        router.pathname === "/#faqs"
-                          ? "text-[#7DB9FF] border-b-[#176CD5] border-b-2 "
-                          : "text-gray-400 hover:border-b-2 hover:border-b-[#176CD5] p-2 hover:rounded-b-2 border-b-2   md:border-b-0"
-                      }`}
-                    >
-                      <Link href="/#faqs">Faqs</Link>
+                    {/* Menu Items */}
+                    <div className="flex flex-col items-center font-mono text-lg font-bold gap-6 mt-4 ">
+                      <div
+                        className={`${
+                          router.pathname === "/"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/">Home</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#aboutUs"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#aboutus">About Us</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#ourservices"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#ourservices">Services</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#cases"
+                            ? "text-[#f64a86]  p-2"
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#ourprocess">Cases</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#news"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#news">News</Link>
+                      </div>
+
+                      <div
+                        className={`${
+                          router.pathname === "/#portfolio"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#portfolio">Portfolio</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#elements"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#elements">Elements</Link>
+                      </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#contactus"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#contactus">Contact Us</Link>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </>
               )}
             </div>
           </div>
