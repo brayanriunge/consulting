@@ -57,6 +57,7 @@ export default function AboutUs() {
               the systems and reletionships that shape our world.
             </p>
           </div>
+          <div></div>
         </div>
       </div>
     </section>
