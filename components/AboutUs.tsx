@@ -12,7 +12,7 @@ export default function AboutUs() {
     >
       <div className="flex flex-col md:flex-row lg:flex-row justify-items-center container sm:px-6 lg:px-8  mx-auto py-8 px-8 gap-4 w-full">
         <div className="flex flex-col mx-auto justify-content gap-4 w-full ">
-          <h1 className="text-[#f64a86] font-bold text-[28px] mb-4">
+          <h1 className="text-[#C71C63] font-bold text-[28px] mb-4">
             About Us
           </h1>
           <p className=" text-black/90 text-base sm:text-lg md:text-[16px]  max-w-xl mb-4 sm:mb-8 font-medium mx-3 tracking-[2%]">
@@ -44,11 +44,11 @@ export default function AboutUs() {
       {/* what we do */}
       <div className=" container mx-auto px-4 sm:px-6 lg:px-8  h-full ">
         <div className="flex items-center justify-center">
-          <h1 className="text-[#f64a86] font-bold text-[28px] mb-4">
+          <h1 className="text-[#C71C63] font-bold text-[28px] mb-4">
             What Do We{" "}
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto justify-cente">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto justify-center">
           <div className="bg-[#301fce] flex flex-col items-center  rounded-md rounded-br-[100px] ">
             <div className="m-8">
               <h2 className="font-bold text-[20px] text-white p-4">

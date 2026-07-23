@@ -1,5 +1,6 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import AboutUs from "@/components/AboutUs";
+import Cases from "@/components/Cases";
 import Glasseffect from "@/components/Glasseffect";
 
 // const geistSans = Geist({
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <Glasseffect />
       <AboutUs />
+      <Cases />
     </>
   );
 }

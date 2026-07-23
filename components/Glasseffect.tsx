@@ -277,7 +277,7 @@ export default function Glasseffect() {
                 achieve measurable growth. This is consulting that delivers real
                 results.
               </p>
-              <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4  md:text-lg text-sm sm:text-base  rounded-2xl text-white bg-[#f64a86] hover:bg-[#f03375] transition-colors duration-300">
+              <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4  md:text-lg text-sm sm:text-base  rounded-2xl text-white bg-[#C71C63] hover:bg-[#f03375] transition-colors duration-300">
                 OUR CASES {">"}
               </button>
             </div>
