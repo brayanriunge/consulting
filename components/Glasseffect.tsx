@@ -195,15 +195,6 @@ export default function Glasseffect() {
                       </div>
                       <div
                         className={`${
-                          router.pathname === "/#ourservices"
-                            ? "text-[#f64a86] p-2 "
-                            : "text-white hover:text-[#f64a86] p-2"
-                        }`}
-                      >
-                        <Link href="/#ourservices">Services</Link>
-                      </div>
-                      <div
-                        className={`${
                           router.pathname === "/#cases"
                             ? "text-[#f64a86]  p-2"
                             : "text-white hover:text-[#f64a86] p-2"
@@ -211,6 +202,16 @@ export default function Glasseffect() {
                       >
                         <Link href="/#ourprocess">Cases</Link>
                       </div>
+                      <div
+                        className={`${
+                          router.pathname === "/#ourservices"
+                            ? "text-[#f64a86] p-2 "
+                            : "text-white hover:text-[#f64a86] p-2"
+                        }`}
+                      >
+                        <Link href="/#ourservices">Services</Link>
+                      </div>
+
                       <div
                         className={`${
                           router.pathname === "/#news"
