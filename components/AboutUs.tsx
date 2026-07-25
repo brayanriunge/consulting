@@ -12,7 +12,7 @@ export default function AboutUs() {
     >
       <div className="flex flex-col md:flex-row lg:flex-row justify-items-center container sm:px-6 lg:px-8  mx-auto py-8 px-8 gap-4 w-full">
         <div className="flex flex-col mx-auto justify-content gap-4 w-full ">
-          <h1 className="text-[#C71C63] font-bold text-[28px] mb-4">
+          <h1 className="text-[#C71C63] font-bold font-mono text-[28px] mb-4">
             About Us
           </h1>
           <p className=" text-black/90 text-base sm:text-lg md:text-[16px]  max-w-xl mb-4 sm:mb-8 font-medium mx-3 tracking-[2%]">
@@ -37,14 +37,14 @@ export default function AboutUs() {
             alt="image"
             height={500}
             width={500}
-            className="h-90  w-full rounded-md aspect-3/2 "
+            className=" sm:h-50 md:h-90 l w-full rounded-md aspect-3/2 "
           />
         </div>
       </div>
       {/* what we do */}
       <div className=" container mx-auto px-4 sm:px-6 lg:px-8  h-full ">
         <div className="flex items-center justify-center">
-          <h1 className="text-[#C71C63] font-bold text-[28px] mb-4">
+          <h1 className="text-[#C71C63] font-bold font-mono  text-[28px] mb-4">
             What Do We{" "}
           </h1>
         </div>

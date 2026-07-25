@@ -53,7 +53,7 @@ export default function Cases() {
       id="cases"
     >
       <div className="flex items-center justify-center">
-        <h1 className="text-[#C71C63] font-bold text-[28px] mb-4">
+        <h1 className="text-[#C71C63] font-bold font-mono text-[28px] mb-4">
           Completed Cases
         </h1>
       </div>
