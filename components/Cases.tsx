@@ -57,14 +57,22 @@ export default function Cases() {
           Completed Cases
         </h1>
       </div>
-      <div className="flex flex-row gap-4 items-center justify-center mb-4">
-        <p className="text-[#C71C63] text-[18px] border-b-4 border-[#C71C63]">
+      <div className="flex flex-row gap-4 items-center justify-center mb-4 ">
+        <p className="text-[#C71C63] lg:text-[18px] sm:text-[14px] border-b-4 border-[#C71C63]">
           All
         </p>
-        <p className="text-black text-[18px] ">Business Services</p>
-        <p className="text-black/70 text-[18px] ">Consumer Products</p>
-        <p className="text-black/70 text-[18px] ">Financial Services</p>
-        <p className="text-black/70 text-[18px] ">Travel & Aviation</p>
+        <p className="text-black lg:text-[18px] sm:text-[14px] ">
+          Business Services
+        </p>
+        <p className="text-black/70 lg:text-[18px] sm:text-[14px] ">
+          Consumer Products
+        </p>
+        <p className="text-black/70 lg:text-[18px] sm:text-[14px] ">
+          Financial Services
+        </p>
+        <p className="text-black/70 lg:text-[18px] sm:text-[14px] ">
+          Travel & Aviation
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-6 lg:px-8 justify-center">
         {joints.map((joint) => (
@@ -73,12 +81,14 @@ export default function Cases() {
               <Image
                 src={joint.src}
                 alt="case"
-                className="sm:h-70 lg:h-60 w-100 rounded-md mb-4 "
+                className="sm:h-70 lg:h-60 w-100 rounded-md mb-4 aspect-3/2"
               />
-              <h2 className="text-[#C71C63] text-[18px] mb-4">
+              <h2 className="text-[#C71C63] font-mono text-[20px] mb-2">
                 {joint.heading}
               </h2>
-              <p className="text-black text-[16px] ">{joint.paragragh}</p>
+              <p className="text-black font-regular text-[16px] ">
+                {joint.paragragh}
+              </p>
             </div>
           </div>
         ))}
