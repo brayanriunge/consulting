@@ -1,9 +1,9 @@
 import React from "react";
-import Cufflinks from "@/public/cufflinks.jpg";
+import Cufflinks from "@/public/Dragon Cufflinks _ Silver Chinese Dragon _ Mens Novelty Cufflinks _ Fantasy Statement Cufflinks _ Groomsmen Gift.jpg";
 import Cargo from "@/public/cargo.jpg";
 import Meeting from "@/public/meeting.jpg";
-import Rfid from "@/public/rfid.jpg";
-import Sales from "@/public/sales.jpg";
+import Rfid from "@/public/Barcode Scanner Dubai – Improve Retail Efficiency.jpg";
+import Sales from "@/public/Businessman Working with Virtual Screen Showing Financial Graph and Rising Profit Arrow.jpg";
 import Shopping from "@/public/Shopping.jpg";
 import Image from "next/image";
 
@@ -81,7 +81,8 @@ export default function Cases() {
               <Image
                 src={joint.src}
                 alt="case"
-                className="sm:h-70 lg:h-60 w-100 rounded-md mb-4 aspect-3/2"
+                loading="eager"
+                className="sm:h-70 lg:h-60 w-100 rounded-lg mb-4  aspect-square"
               />
               <h2 className="text-[#C71C63] font-mono text-[20px] mb-2">
                 {joint.heading}
