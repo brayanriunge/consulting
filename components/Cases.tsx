@@ -1,4 +1,3 @@
-import React from "react";
 import Cufflinks from "@/public/Dragon Cufflinks _ Silver Chinese Dragon _ Mens Novelty Cufflinks _ Fantasy Statement Cufflinks _ Groomsmen Gift.jpg";
 import Cargo from "@/public/cargo.jpg";
 import Meeting from "@/public/meeting.jpg";
