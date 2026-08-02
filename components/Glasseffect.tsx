@@ -2,11 +2,16 @@ import React from "react";
 import Link from "next/link";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState, useEffect } from "react";
+import { Germania_One } from "next/font/google";
 // import { HiBars3 } from "react-icons/hi2";
 
 import { HiBars3 } from "react-icons/hi2";
 import { HiOutlineX } from "react-icons/hi";
 
+const german = Germania_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 export default function Glasseffect() {
   const flexStyles = "justify-between flex items-center";
   const isAboveMediaScreens = useMediaQuery("(min-width: 1060px)");
@@ -61,7 +66,7 @@ export default function Glasseffect() {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen" suppressHydrationWarning>
       {/* Background Image - This needs to be at the parent level */}
       <div
         className="absolute inset-0"
@@ -91,7 +96,11 @@ export default function Glasseffect() {
           <div className={`${flexStyles} mx-auto w-5/6`}>
             <div className={`${flexStyles} gap-8 w-full`}>
               <Link href="/">
-                <p className="font-semibold text-3xl text-white">consulting</p>
+                <p
+                  className={`${german.className} text-[50px] text-white italic`}
+                >
+                  consulting
+                </p>
               </Link>
 
               {isAboveMediaScreens ? (
@@ -141,7 +150,7 @@ export default function Glasseffect() {
             <div
               className="fixed inset-0 z-40"
               style={{
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(45, 47, 68, 0.5)",
               }}
               onClick={() => setIsMenuToggled(false)}
             />
@@ -150,8 +159,8 @@ export default function Glasseffect() {
             <div
               className="fixed right-0 top-0 bottom-0 w-64 sm:w-80 z-50 p-5 shadow-2xl overflow-y-auto"
               style={{
-                backgroundColor: "#1A2739",
-                borderLeft: "1px solid rgba(255, 255, 255, 0.08)",
+                backgroundColor: "#2d2f44",
+                borderLeft: "1px solid rgba(45, 47, 68, 0.08)",
               }}
               onClick={(e) => e.stopPropagation()}
             >
