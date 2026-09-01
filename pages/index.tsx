@@ -2,6 +2,7 @@
 import AboutUs from "@/components/AboutUs";
 import Cases from "@/components/Cases";
 import Glasseffect from "@/components/Glasseffect";
+import Services from "../components/Services";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -19,6 +20,7 @@ export default function Home() {
       <Glasseffect />
       <AboutUs />
       <Cases />
+      <Services />
     </>
   );
 }

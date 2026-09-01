@@ -73,7 +73,7 @@ export default function Cases() {
           Travel & Aviation
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-6 lg:px-8 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-6 lg:px-8 justify-center">
         {joints.map((joint) => (
           <div key={joint.id}>
             <div className="flex flex-col justify-content mt-4 ">
@@ -81,9 +81,9 @@ export default function Cases() {
                 src={joint.src}
                 alt="case"
                 loading="eager"
-                className="sm:h-70 lg:h-60 w-100 rounded-lg mb-4  aspect-square"
+                className="sm:h-70 lg:h-60 w-100 rounded-lg mb-4 "
               />
-              <h2 className="text-[#C71C63] font-mono text-[20px] mb-2">
+              <h2 className="text-primary font-mono text-[20px] mb-2">
                 {joint.heading}
               </h2>
               <p className="text-black font-regular text-[16px] ">

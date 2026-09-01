@@ -11,7 +11,7 @@ export default function Hero() {
       >
         {/*opacity gradient overlay*/}
         <div
-          className="absolute inset-0 bg-[#2d2f44] "
+          className="absolute inset-0 bg-background "
           style={{
             background: "rgba(45, 47, 68, 0.5)", // 90% opacity (10% transparent)
             backgroundAttachment: "fixed",
