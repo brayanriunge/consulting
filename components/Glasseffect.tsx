@@ -118,13 +118,13 @@ export default function Glasseffect() {
                         onClick={() => handleClick(navItem.id)}
                         className={`relative transition-all duration-300 ${
                           activeSection === navItem.id
-                            ? "text-[#f64a86] font-bold"
-                            : "text-white hover:text-[#f64a86]"
+                            ? "text-primary font-bold"
+                            : "text-white hover:text-hovered"
                         }`}
                       >
                         {navItem.label}
                         {activeSection === navItem.id && (
-                          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#f64a86] rounded-full" />
+                          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full" />
                         )}
                       </button>
                     ))}
@@ -182,8 +182,8 @@ export default function Glasseffect() {
                     }}
                     className={`w-full text-center py-3 px-3 rounded-lg transition-all duration-300 ${
                       activeSection === item.id
-                        ? "text-[#f64a86] bg-[#f64a86]/10 font-bold"
-                        : "text-white hover:text-[#f64a86] hover:bg-white/5"
+                        ? "text-primary bg-primary/10 font-bold"
+                        : "text-white hover:text-primary hover:bg-white/5"
                     }`}
                   >
                     {item.label}
@@ -215,18 +215,18 @@ export default function Glasseffect() {
                 achieve measurable growth. This is consulting that delivers real
                 results.
               </p>
-              <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4  md:text-lg text-sm sm:text-base  rounded-2xl text-white bg-[#C71C63] hover:bg-[#f03375] transition-colors duration-300">
+              <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4  md:text-lg text-sm sm:text-base  rounded-2xl text-white bg-primary hover:bg-hovered transition-colors duration-300">
                 OUR CASES {">"}
               </button>
             </div>
           </div>
           <div className="hidden lg:block">
             <div className="hidden md:flex md:flex-col lg:flex-col justify-items-end items-center gap-4 pl-96 lg:py-0 lg:pt-12 xl:pt-20 ">
-              <div className="w-px h-50 bg-[#f64a86] " />
+              <div className="w-px h-50 bg-primary " />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
-              <div className="w-8 h-8 rounded-full bg-[#f64a86] border-4 border-gray-300" />
+              <div className="w-8 h-8 rounded-full bg-primary border-4 border-gray-300" />
             </div>
           </div>
         </div>
