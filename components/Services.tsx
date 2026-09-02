@@ -67,8 +67,8 @@ export default function Services() {
     },
   ];
   return (
-    <section id="services" className="h-full bg-gray-200 px-8 py-4">
-      <div className="justify-items-center mt-4">
+    <section id="services" className="h-full bg-gray-200 px-8  py-4">
+      <div className="justify-items-center mt-14 ">
         <h1 className="text-primary font-bold font-mono text-[28px] mb-4">
           Our Services
         </h1>

@@ -10,7 +10,7 @@ export default function AboutUs() {
       className="min-h-[60vh] md:min-h-[70vh] lg:h-full py-8 px-4  bg-gray-200 bg-[url('/world.png')] bg-cover bg-center bg-no-repeat "
       id="about"
     >
-      <div className="flex flex-col md:flex-row lg:flex-row justify-items-center container sm:px-6 lg:px-8  mx-auto py-8 px-8 gap-4 w-full">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-items-center container sm:px-6 lg:px-8  mx-auto py-10 px-8 gap-4 w-full">
         <div className="flex flex-col mx-auto justify-content gap-4 w-full ">
           <h1 className="text-primary font-bold font-mono text-[28px] mb-4">
             About Us

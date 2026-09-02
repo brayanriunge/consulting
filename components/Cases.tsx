@@ -48,7 +48,7 @@ export default function Cases() {
   ];
   return (
     <section
-      className="min-h-[60vh] md:min-h-[70vh] lg:h-full py-8 px-4  bg-gray-200  "
+      className="min-h-[60vh] md:min-h-[70vh] lg:h-full py-8 px-4 mt-14 bg-gray-200  "
       id="cases"
     >
       <div className="flex items-center justify-center">
