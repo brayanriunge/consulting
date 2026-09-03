@@ -107,8 +107,8 @@ export default function Services() {
         <p className="md:text-center text-[20px] text-justify whitespace-normal md:tracking-wider  ">
           Our team of seasoned advisor and industry specialist brings deep
           expertise and strategic insight to every challenge. From financial
-          restructuring to operational excellence, they provide the
-          guidanceneeded to navigate complexity and drive lasting results.
+          restructuring to operational excellence, they provide the guidance
+          needed to navigate complexity and drive lasting results.
         </p>
         <div className="grid grid-rows-2 md:flex md:flex-wrap items-center justify-center mt-4 gap-6">
           {advisors.map((advisor) => (
@@ -120,7 +120,7 @@ export default function Services() {
               />
 
               <div className="flex flex-col ">
-                <p className="text-black text-[20px] font-bold">
+                <p className="text-black/60 text-[20px] font-bold">
                   {advisor.Name}
                 </p>
                 <p className="text-primary">{advisor.department}</p>

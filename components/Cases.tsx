@@ -77,18 +77,20 @@ export default function Cases() {
         {joints.map((joint) => (
           <div key={joint.id}>
             <div className="flex flex-col justify-content mt-4 ">
-              <Image
-                src={joint.src}
-                alt="case"
-                loading="eager"
-                className="sm:h-70 lg:h-60 w-100 rounded-lg mb-4 "
-              />
-              <h2 className="text-primary font-mono text-[20px] mb-2">
-                {joint.heading}
-              </h2>
-              <p className="text-black font-regular text-[16px] ">
-                {joint.paragragh}
-              </p>
+              <div>
+                <Image
+                  src={joint.src}
+                  alt="case"
+                  loading="eager"
+                  className="sm:h-70 lg:h-60 w-100 rounded-lg mb-4 transition-transform duration-300 hover:scale-102 "
+                />
+                <h2 className="text-primary font-mono text-[20px] mb-2">
+                  {joint.heading}
+                </h2>
+                <p className="text-black font-regular text-[16px] ">
+                  {joint.paragragh}
+                </p>
+              </div>
             </div>
           </div>
         ))}
