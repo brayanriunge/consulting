@@ -41,11 +41,22 @@ export default function Portfolio() {
               className="flex flex-col items-center justify-center gap-1"
             >
               <h1 className="text-white text-5xl font-bold">{figure.count}</h1>
-              <p className="text-white text-lg font-semibold text-center">
-                {figure.text}
-              </p>
+              <p className="text-white text-lg  text-center">{figure.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="bg-gray-200 px-8 py-4">
+        <div className="flex flex-row  items-center justify-center">
+          {/* [#4e3120] */}
+          <div className="rounded-lg rounded-br-4xl bg-[#4e3120]">
+            <div className="mt-10 p-4">
+              <h1 className="font-bold text-white text-4xl tracking-wide ">
+                Why Choose Us
+              </h1>
+              <div className="flex flex-row gap-10"></div>
+            </div>
+          </div>
         </div>
       </section>
     </>

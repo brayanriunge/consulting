@@ -120,7 +120,7 @@ export default function Services() {
               />
 
               <div className="flex flex-col ">
-                <p className="text-black/60 text-[20px] font-bold">
+                <p className="text-black/80 text-[20px] font-semibold">
                   {advisor.Name}
                 </p>
                 <p className="text-primary">{advisor.department}</p>
