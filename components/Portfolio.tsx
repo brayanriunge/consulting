@@ -1,4 +1,5 @@
 import React from "react";
+import { GiHealthPotion } from "react-icons/gi";
 
 export default function Portfolio() {
   const figures = [
@@ -23,6 +24,7 @@ export default function Portfolio() {
       text: "Satisfied Customers",
     },
   ];
+
   return (
     <>
       <section className="bg-secondary px-8 py-4" id="portfolio">
@@ -54,7 +56,9 @@ export default function Portfolio() {
               <h1 className="font-bold text-white text-4xl tracking-wide ">
                 Why Choose Us
               </h1>
-              <div className="flex flex-row gap-10"></div>
+              <div className="flex flex-row gap-10">
+                <div className="flex flex-col mt-6"></div>
+              </div>
             </div>
           </div>
         </div>
