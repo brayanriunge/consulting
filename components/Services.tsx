@@ -104,7 +104,7 @@ export default function Services() {
         <h1 className="text-primary font-bold font-mono text-[20px] md:text-[28px] text-base mb-4">
           Advisor & Specialist
         </h1>
-        <p className="md:text-center text-[20px] text-justify whitespace-normal md:tracking-wider  ">
+        <p className="md:text-center text-[20px] text-base md:tracking-wider  ">
           Our team of seasoned advisor and industry specialist brings deep
           expertise and strategic insight to every challenge. From financial
           restructuring to operational excellence, they provide the guidance
