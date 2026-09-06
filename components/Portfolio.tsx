@@ -68,7 +68,7 @@ export default function Portfolio() {
                     <h2 className="text-2xl text-white">Health Services</h2>
                   </div>
 
-                  <p className="text-white ps-8 text-base ">
+                  <p className="text-white ps-9 text-base ">
                     We support healthcare organizations with data driven
                     strategies, operation improvements and patient e-centric
                     solutionsthat enhance care delivery and system efficiency.
@@ -81,7 +81,7 @@ export default function Portfolio() {
                     </span>
                     <h2 className="text-2xl text-white">Retailed Trade</h2>
                   </div>
-                  <p className="text-white ps-8 text-base">
+                  <p className="text-white ps-9 text-base">
                     From supply chain optimization to custormer experience
                     design, we help retail businesses adapt, compete and grow in
                     a rapidly shifting markup landscope.
@@ -97,7 +97,7 @@ export default function Portfolio() {
                     <h2 className="text-2xl text-white">Technology Service</h2>
                   </div>
 
-                  <p className="text-white ps-8 text-base ">
+                  <p className="text-white ps-9 text-base ">
                     We provide expert consulting on digital transformation
                     system intergration and infrastacture --- empowering tech
                     driven growth and innovation.
@@ -110,7 +110,7 @@ export default function Portfolio() {
                     </span>
                     <h2 className="text-white text-2xl">Retailed Trade</h2>
                   </div>
-                  <p className="text-white ps-8 text-base mb-4">
+                  <p className="text-white ps-9 text-base mb-4">
                     From supply chain optimization to custormer experience
                     design, we help retail businesses adapt, compete and grow in
                     a rapidly shifting markup landscope.
