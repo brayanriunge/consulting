@@ -41,7 +41,7 @@ export default function News() {
         </h1>
       </div>
 
-      <div className="flex  flex-col md:flex-col lg:flex-row  items-center  justify-evenly">
+      <div className="flex  flex-col md:flex-row  lg:flex-row  items-center  justify-evenly">
         {items.map((item) => (
           <div className="p-4 flex flex-col gap-2" key={item.id}>
             <Image
