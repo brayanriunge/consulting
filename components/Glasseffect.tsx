@@ -222,7 +222,7 @@ export default function Glasseffect() {
           </div>
           <div className="hidden lg:block">
             <div className="hidden md:flex md:flex-col lg:flex-col justify-items-end items-center gap-4 pl-96 lg:py-0 lg:pt-12 xl:pt-20 ">
-              <div className="w-px h-50 bg-primary " />
+              <div className="w-0.5 h-50 bg-primary " />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
               <div className="w-6 h-6 rounded-full bg-white border border-gray-300" />
