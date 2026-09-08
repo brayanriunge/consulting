@@ -28,7 +28,7 @@ export default function Glasseffect() {
     { id: "services", label: "Services" },
     { id: "portfolio", label: "Portfolio" },
     { id: "news", label: "News" },
-    { id: "elements", label: "Elements" },
+
     { id: "contactus", label: "Contact Us" },
   ];
 
