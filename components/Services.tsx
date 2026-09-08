@@ -69,7 +69,7 @@ export default function Services() {
   return (
     <section id="services" className="h-full bg-gray-200 px-8  py-4">
       <div className="justify-items-center mt-14 ">
-        <h1 className="text-primary font-bold font-mono text-[28px] mb-4">
+        <h1 className="text-primary font-bold font-mono text-4xl mb-4">
           Our Services
         </h1>
       </div>
@@ -101,7 +101,7 @@ export default function Services() {
         ))}
       </div>
       <div className="justify-items-center md:px-20 py-4 mt-4">
-        <h1 className="text-primary font-bold font-mono text-[20px] md:text-[28px] text-base mb-4">
+        <h1 className="text-primary font-bold font-mono text-4xl md:text-[28px]  mb-4">
           Advisor & Specialist
         </h1>
         <p className="md:text-center text-[20px] text-base md:tracking-wider  ">
