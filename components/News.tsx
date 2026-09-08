@@ -70,7 +70,7 @@ export default function News() {
           Clients Feedback
         </h1>
       </div>
-      <div className="flex flex-row items-center items-stretch justify-center gap-6">
+      <div className="flex flex-row  items-stretch justify-center gap-6">
         {/* first div */}
         <div className="flex flex-col">
           <div className="flex flex-col bg-gray-300 gap-4 rounded">
