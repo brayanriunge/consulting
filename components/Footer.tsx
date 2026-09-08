@@ -19,8 +19,8 @@ export default function Footer() {
             consulting
           </h1>
           <p className="text-white">
-            &copy; <span className="text-primary">Consulting Website</span> by{" "}
-            <span className="text-primary">Brian</span>
+            &copy; 2026 <span className="text-primary">Consulting Website</span>{" "}
+            by <span className="text-primary">Brian</span>
           </p>
           <div className="flex flex-row gap-4 items-stretch">
             <div className="rounded-full p-3 bg-gray-200/20">
