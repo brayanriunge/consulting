@@ -16,7 +16,7 @@ export default function Footer() {
         {/* consulting logo */}
         <div className="flex flex-col gap-3">
           <h1 className={`${german.className} text-[40px]  text-white italic`}>
-            consulting
+            consulting wp
           </h1>
           <p className="text-white">
             &copy; 2026 <span className="text-primary">Consulting Website</span>{" "}

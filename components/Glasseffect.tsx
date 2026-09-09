@@ -99,7 +99,7 @@ export default function Glasseffect() {
                 <p
                   className={`${german.className} text-[50px] text-white italic`}
                 >
-                  consulting
+                  consulting wp
                 </p>
               </Link>
 
