@@ -100,11 +100,11 @@ export default function Services() {
           </div>
         ))}
       </div>
-      <div className="justify-items-center md:px-20 py-4 mt-4">
-        <h1 className="text-primary font-bold font-mono text-4xl md:text-[28px]  mb-4">
+      <div className="justify-items-center md:px-20 py-4 mt-4 ">
+        <h1 className="text-primary font-bold font-mono text-4xl md:text-[28px]  mb-6">
           Advisor & Specialist
         </h1>
-        <p className="md:text-center text-[20px] text-base md:tracking-wider  ">
+        <p className="md:text-center text-[20px] text-base md:tracking-wider mb-8 ">
           Our team of seasoned advisor and industry specialist brings deep
           expertise and strategic insight to every challenge. From financial
           restructuring to operational excellence, they provide the guidance
