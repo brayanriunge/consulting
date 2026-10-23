@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className={`${flexStyles} mx-auto w-5/6`}>
           <div className={`${flexStyles} gap-8 w-full`}>
             <Link href="/">
-              <p className="font-semibold text-3xl text-white">consulting</p>
+              <p className="font-semibold text-2xl text-white">consulting</p>
             </Link>
 
             {isAboveMediaScreens ? (

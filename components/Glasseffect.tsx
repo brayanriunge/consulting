@@ -99,7 +99,7 @@ export default function Glasseffect() {
                 <p
                   className={`${german.className} text-[50px] text-white italic`}
                 >
-                  consulting wp
+                  consulting
                 </p>
               </Link>
 
@@ -116,7 +116,7 @@ export default function Glasseffect() {
                       <button
                         key={navItem.id}
                         onClick={() => handleClick(navItem.id)}
-                        className={`relative transition-all duration-300 ${
+                        className={`relative px-4 py-2 transition-all duration-300 ${
                           activeSection === navItem.id
                             ? "text-primary font-bold"
                             : "text-white hover:text-hovered"
